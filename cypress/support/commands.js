@@ -1,0 +1,10 @@
+Cypress.Commands.add('fillForm', function(){
+    cy.get('#firstName').type('cypress')
+    cy.get('#lastName').type('Automation')
+    cy.get('#email').type('cypress@automation.com')
+    cy.get('#phone').type('11 999999999')
+    cy.get('#product').select('cursos')
+    cy.get('#email-checkbox').click()
+    cy.get('#open-text-area').type('No comments')
+    cy.get('.button').click()
+})
